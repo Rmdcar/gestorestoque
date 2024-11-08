@@ -1,0 +1,63 @@
+.botaoAtualizar {
+  background-color: white;
+  color: #2c2c2c;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.botaoExcluir {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.divInicial{
+    display: flex;
+    flex-direction: row;
+    gap:3rem;
+    margin: 2rem;
+}
+.divIntermediaria{
+    display: flex;    
+    flex-direction: row;
+}
+
+.tags{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    border-radius: 4px;
+    margin: 2rem;
+}
+.descricao{
+    color: white;
+    margin-left: 2rem;
+}
+
+.datas{
+    display: flex;
+    flex-direction: row;
+    margin: 2rem;
+    gap: 2rem
+}

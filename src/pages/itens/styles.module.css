@@ -1,0 +1,56 @@
+.botaoVer {
+    background-color: rgb(48, 93, 243);
+    color: #2c2c2c;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 8rem;
+  }
+
+
+.botaoAtualizar {
+    background-color: white;
+    color: #2c2c2c;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 8rem;
+  }
+  
+  .botaoExcluir {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 8rem;
+  }
+  table {
+    width: 100%;
+    border: 1px solid #ddd;    
+  }
+  
+  .acoes{
+    display: flex;
+    justify-content: center;
+  }
+
+  

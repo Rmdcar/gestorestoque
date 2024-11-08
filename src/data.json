@@ -1,0 +1,113 @@
+[
+    {
+      "id": 1,
+      "nome": "Caderno Universitário",
+      "categoria": "Cadernos",
+      "preco": 15.99,
+      "quantidadeEmEstoque": 200,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-11-01",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 2,
+      "nome": "Caneta Esferográfica Azul",
+      "categoria": "Canetas",
+      "preco": 1.5,
+      "quantidadeEmEstoque": 200,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-10-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 3,
+      "nome": "Lápis HB",
+      "categoria": "Lápis",
+      "preco": 0.8,
+      "quantidadeEmEstoque": 3,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 4,
+      "nome": "Borracha Branca",
+      "categoria": "Borrachas",
+      "preco": 1.2,
+      "quantidadeEmEstoque": 150,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 5,
+      "nome": "Marcador Permanente",
+      "categoria": "Marcadores",
+      "preco": 3.0,
+      "quantidadeEmEstoque": 75,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 6,
+      "nome": "Clips de Papel (100 unidades)",
+      "categoria": "Clips e Grampos",
+      "preco": 2.5,
+      "quantidadeEmEstoque": 1,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 7,
+      "nome": "Bloco de Notas Adesivas",
+      "categoria": "Blocos e Notas",
+      "preco": 4.0,
+      "quantidadeEmEstoque": 1,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 8,
+      "nome": "Papel Sulfite A4 (500 folhas)",
+      "categoria": "Papéis",
+      "preco": 18.5,
+      "quantidadeEmEstoque": 1,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 9,
+      "nome": "Estojo Escolar",
+      "categoria": "Estojos",
+      "preco": 10.0,
+      "quantidadeEmEstoque": 40,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 10,
+      "nome": "Tesoura Escolar",
+      "categoria": "Tesouras",
+      "preco": 5.0,
+      "quantidadeEmEstoque": 60,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-01-10",
+      "dataAtualizacao": "2024-11-01"
+    },
+    {
+      "id": 11,
+      "nome": "Grampeador",
+      "categoria": "Grampeadores",
+      "preco": 15.0,
+      "quantidadeEmEstoque": 11,
+      "descricao": "Produto de papelaria para uso em atividades escolares",
+      "dataCadastro": "2024-10-10",
+      "dataAtualizacao": "2024-11-01"
+    }
+  ]
+  
