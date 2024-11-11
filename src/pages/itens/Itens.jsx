@@ -2,9 +2,18 @@ const products = JSON.parse(localStorage.getItem("products")) || [];
 import Stock from '../../components/stock/Stock';
 import { Link } from "react-router-dom";
 import styles from "./styles.module.css"
+import { useState, useEffect } from 'react';
 
 
 function Itens(){
+
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const storedProducts = JSON.parse(localStorage.getItem("products")) || [];
+    setProducts(storedProducts);
+  }, []);
+  
     return(
         <>
         <Stock/>
