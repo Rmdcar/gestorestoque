@@ -1,33 +1,40 @@
 import Stock from "../../components/stock/Stock";
 import styles from "./styles.module.css";
-import { useParams} from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-const products = JSON.parse(localStorage.getItem("products")) || [];
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function EditarItem() {
   const { id } = useParams();
-  const product = products.find((p) => p.id === parseInt(id));
-
-  const [nome, setNome] = useState(product?.nome || "");
-  const [quantidade, setQuantidade] = useState(product?.quantidadeEmEstoque || 0);
-  const [preco, setPreco] = useState(product?.preco || 0);
-  const [categoria, setCategoria] = useState(product?.categoria || "");
-  const [descricao, setDescricao] = useState(product?.descricao || "");
+  const [product, setProduct] = useState(null);
+  const [nome, setNome] = useState("");
+  const [quantidade, setQuantidade] = useState(0);
+  const [preco, setPreco] = useState(0);
+  const [categoria, setCategoria] = useState("");
+  const [descricao, setDescricao] = useState("");
 
   useEffect(() => {
-    if (product) {
-      setNome(product.nome);
-      setQuantidade(product.quantidadeEmEstoque);
-      setPreco(product.preco);
-      setCategoria(product.categoria);
-      setDescricao(product.descricao);
+    const products = JSON.parse(localStorage.getItem("products")) || [];
+    const selectedProduct = products.find((p) => p.id === parseInt(id));
+    if (selectedProduct) {
+      setProduct(selectedProduct);
+      setNome(selectedProduct.nome);
+      setQuantidade(selectedProduct.quantidadeEmEstoque);
+      setPreco(selectedProduct.preco);
+      setCategoria(selectedProduct.categoria);
+      setDescricao(selectedProduct.descricao);
     }
-  }, [product]);
+  }, [id]);
 
   if (!product) {
-    return <><Stock/><br></br><p>Produto não encontrado</p></>;
+    return (
+      <>
+        <Stock />
+        <br />
+        <p>Produto não encontrado</p>
+      </>
+    );
   }
 
   // Função para converter data de ISO 8601 para DD-MM-YYYY
@@ -48,16 +55,16 @@ function EditarItem() {
       preco,
       categoria,
       descricao,
-      dataAtualizacao: formatDate(new Date().toISOString()), // Adiciona a data de atualização      
+      dataAtualizacao: formatDate(new Date().toISOString()), // Adiciona a data de atualização
     };
 
+    const products = JSON.parse(localStorage.getItem("products")) || [];
     const updatedProducts = products.map((p) =>
       p.id === updatedProduct.id ? updatedProduct : p
     );
 
     localStorage.setItem("products", JSON.stringify(updatedProducts));
     toast.success("Produto atualizado com sucesso!");
-    
   };
 
   return (
@@ -126,7 +133,7 @@ function EditarItem() {
         </div>
         <button type="submit">Salvar</button>
       </form>
-      <ToastContainer className={styles.toastContainer}/>
+      <ToastContainer className={styles.toastContainer} />
     </>
   );
 }
